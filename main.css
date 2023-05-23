@@ -1,0 +1,141 @@
+img {
+	filter: grayscale(100%) sepia(100%) hue-rotate(70deg) brightness(1) contrast(0.9);
+	max-height: 500px;
+	width: 500px;
+	margin-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+
+}
+
+
+.boxselezione {
+	margin-bottom: 4.1px;
+}
+
+.boxaggiungi {
+	max-height: 24.1px;
+	color: black;
+}
+p.boxaggiungi {
+	color: rgb(200,200,200);
+}
+
+/*-------------------*/
+/*-----colonnee------*/
+/*-------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  margin-top: 10px;
+  float: left;
+}
+
+.left {
+  width: 25px;
+}
+
+.right {
+  width: 90%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-------------------*/
+/*-------body--------*/
+/*-------------------*/
+
+* {
+	font-family: Menlo;
+}
+
+.headleft {
+	line-height: 20px; 
+	color: rgb(20, 20, 20);
+	display: inline-block;
+	margin-top: 1px;
+	margin-bottom: 1px;
+
+}
+
+.head {
+	line-height: 20px; 
+	color: rgb(20, 20, 20);
+	margin-left: 15px;
+	display: inline-block;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+p, h6 {
+	color: rgb(200,200,200); 
+	line-height: 0px; 
+	display: inline-block;   
+}
+
+h1 {
+	color: rgb(0,256,20); 
+
+}
+
+.pnumeri{
+	color: rgb(100,100,100); 
+	line-height: 28px; 
+	font-size: 10px; 
+	display: inline-block; 
+}
+.text2 {
+	color: rgb(100,100,100);
+
+}
+
+.pinterlinea{
+	color: rgb(200,200,200); 
+	line-height: 28px; 
+	display: inline-block; 
+	margin-bottom: 0px; 
+}
+
+.screen {
+	color: black;
+	background-color: rgb(200,200,200); 
+}
+
+.screen:hover {
+	color: rgb(0,256,20);
+	background-color: black; 
+}
+
+
+/*-------------------*/
+/*-------note--------*/
+/*-------------------*/
+
+.note {color: rgb(200,200,200);
+	   cursor:pointer;
+	   text-decoration:none;
+}
+.note:hover {color: rgb(0, 256, 0);
+			
+}
+
+
+
+    .collapse-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      padding: 0px;
+  	  margin-left: 3%;
+    }
+
+    .collapse-content.collapsed {
+      max-height: 1000px;
+      transition: max-height 0.2s ease-in;
+    }

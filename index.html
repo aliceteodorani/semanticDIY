@@ -5,18 +5,425 @@
 	<title>SEMANTIC DIY</title> 
 	<meta charset="utf-8">
 	<!--meta serve per leggere gli accenti su safari-->
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+  	<script language="javascript" type="text/javascript" src="script.js"></script>
+  	<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+	<style> body {background-color: rgb(20, 20, 20);} </style>	
 </head>
 <body>
 
-	<h1>IN PRISON YOU'RE SOMEBODY'S B1TCH</h1>
-	<h2>don't drop your soap</h2>
-		<p>/sa·pó·ne/ <br> sostantivo maschile <br>
-		Nome generico di preparati detergenti, per lo più solidi e modellati in varie forme, ottenuti per saponificazione dei grassi animali e vegetali: s. da bucato, da toeletta; s. da barba; s. in polvere; s. liquido; s. in scaglie; un pezzo di s.; lavarsi con acqua e s.; prov. perdere (o buttar via o gettar via) il ranno e il s., sprecare tempo e fatica.</p>
-	<div>attenzione</div>
-	<figure>
-		<img src="img/2.png">
-	</figure>
-	<figcaption>RARARA</figcaption>
+<!--<audio autoplay loop>
+  <source src="terekke.mp3" type="audio/mpeg">
+</audio> -->
 
+<!------------>
+<!-- HEADER -->
+<!------------>
+<header style="background-color:rgb(200, 200, 200);">
+  <p class="head">Semantic DIY — Nothing is created, nothing is destroyed, everything is transformed</p>
+
+</header>
+
+<!------------>
+<!-- NUMERI -->
+<!------------>
+<div class="container-fluid">
+  <div class="row no-gutters">
+<!--<div class="col-1">-->
+    <div class="column left">
+		<p class="pnumeri">01<br>02<br>03<br>04<br>05<br>06<br>07<br>08<br>09<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54<br>55<br>56<br>57<br>58<br>59<br>60<br>61<br>62<br>63<br>64<br>65<br>66<br>67<br>68<br>69<br>70<br>71<br>72<br>73<br>74<br>75<br>76<br>77<br>78<br>79<br>80<br>81<br>82<br>83<br>84<br>85<br>86<br>87<br>88<br>89<br>90<br>91<br>92<br>93<br>94<br>95<br>96<br>97<br>98<br>99 </p> </div>
+
+<!--------->
+<!-- TXT -->
+<!--------->
+	<div class="column right ">
+
+		<!---------->
+		<!-- ABOUT-->
+		<!---------->
+		<p class="note" onclick="toggleCollapse()">about</p>
+<div class="collapse-content">
+  <p class="pinterlinea">Welcome to Semantic DIY, a website where you can create your own recipes for a range of everyday products, including soaps, detergents, shampoos, and even food. Our platform is called "semantic" because it allows you to modify the recipes based on ingredients you already have at home, finding substitutes for those you don't, and customizing your products to suit your preferences.
+By using Semantic DIY, you have the power to take control over the products you use every day. You can avoid buying from big companies and contributing to their profits, while also reducing waste and pollution associated with packaging. Our platform empowers you to create sustainable, eco-friendly products that are tailored to your needs.
+We believe that everyone deserves the opportunity to make a positive impact on the environment and take charge of their own health and well-being. Our mission is to make sustainable living accessible and convenient for everyone, by providing a platform that is easy to use and customize.
+Join the Semantic DIY community today and start creating your own recipes for a better, more sustainable future.</p> </div>
+
+	<!-------------->
+	<!-- PRODUCTS -->
+	<!-------------->
+	<p id="allProducts" class="note" onclick="toggleCollapse()" >all products</p>
+<div class="collapse-content">
+
+			<!----------->
+			<!-- BREAD -->
+			<!----------->
+  		<p class="note" onclick="toggleCollapse()" id="bread" >bread</p>
+		<div class="collapse-content">
+		<div class="screenshot-section">
+		<form>
+  <div class="boxselezione">
+    <select >
+    	<!-- FARINA -->
+      <option>white flour</option>
+      <option>chickpea flour</option>
+      <option>rice flour</option>
+      <option>brown rice flour</option>
+      <option>almond flour</option>
+      <option>whole wheat flour</option>
+      <option>oat flour</option>
+      <option>coconut flour</option>
+      <option>spelt flour</option>
+      <option>rye flour</option>
+      <option>buckwheat flour</option>
+      <option>bean flour</option>
+      <option>ground mung bean</option>
+      <option>x</option>
+      <option>...</option>
+    </select>
+  </div>
+
+  <div class="boxselezione">
+    <select >
+    	<!-- ACQUA -->
+      <option>water</option>
+      <option>distilled water</option>
+      <option>milk</option>
+      <option>almond milk</option>
+      <option>coconut milk</option>
+      <option>rice milk</option>
+      <option>x</option>
+      <option>...</option>
+    </select>
+  </div>
+
+  <div class="boxselezione">
+    <select >
+    	<!-- LIEVITO -->
+      <option>yeast</option>
+      <option>baking powder</option>
+      <option>baking soda</option>
+      <option>baking soda + lemon juice</option>
+      <option>baking soda + milk + vinegard</option>
+      <option>sourdough starter</option>
+      <option>beaten egg whites</option>
+      <option>x</option>
+      <option>...</option>
+
+    </select>
+  </div>
+
+  <div class="boxselezione">
+    <select >
+    	<!-- OLIO -->
+      <option>olive oil</option>
+      <option>almond oil</option>
+      <option>avocado oil</option>
+      <option>coconut oil</option>
+      <option>flaxseed oil</option>
+      <option>sunflower oil</option>
+      <option>peanut oil</option>
+      <option>walnut oil</option>
+      <option>grapeseed oil</option>
+      <option>canola oil</option>
+      <option>butter</option>
+      <option>peanut butter </option>
+      <option>mashed banana</option>
+      <option>x</option>
+      <option>...</option>
+    </select>
+  </div>
+
+  <div class="boxselezione">
+    <select >
+    	<!-- SALE -->
+      <option>salt</option>
+      <option>rosemary</option>
+      <option>thyme</option>
+      <option>onion powder</option>
+      <option>garlic powder</option>
+      <option>parsley</option>
+      <option>cilantro</option>
+      <option>sage</option>
+      <option>celery seed</option>
+      <option>mint</option>
+      <option>nutmeg</option>
+      <option>basil</option>
+      <option>paprika</option>
+      <option>lemon juice or zest</option>
+      <option>vinegar</option>
+      <option>x</option>
+      <option>...</option>
+
+    </select>
+  </div>
+
+  <div class="boxselezione">
+    <select >
+    	<!-- ZUCCHERO -->
+      <option>white sugar</option>
+      <option>brown sugar</option>
+      <option>coconut sugar</option>
+      <option>palm sugar</option>
+      <option>stevia</option>
+      <option>honey</option>
+      <option>dates</option>
+      <option>yacon syrup</option>
+      <option>maple syrup</option>
+      <option>erythritol</option>
+      <option>xylitol</option>
+      <option>x</option>
+      <option>...</option>
+    </select>
+  </div>
+
+ <div> <input class="boxaggiungi boxselezione" placeholder="add an ingredient"></div>
+ <div> <input class="boxaggiungi boxselezione" placeholder="add an ingredient"></div>
+
+</form>
+</div>
+<button class="screen" onclick="takeScreenshot(event)">save bread recipe</button>
+		</div>
+
+			<!---------->
+			<!-- SOAP -->
+			<!---------->
+  		 		<p class="note" onclick="toggleCollapse()">soap</p>
+		<div class="collapse-content">
+		<div class="screenshot-section">
+		<form>
+  <div class="boxselezione">
+    <select >
+    	<!-- GRASSO -->
+      <option>lye</option>
+      <option>ashes + water</option>
+      <option>rice flour</option>
+      <option>caustic soda</option>
+      <option>sodium carbonate</option>
+      <option>x</option>
+      <option>...</option>
+    </select>
+  </div>
+
+  <div class="boxselezione">
+    <select >
+    	<!-- ACQUA -->
+      <option>water</option>
+      <option>distilled water</option>
+      <option>heated mineral water</option>
+      <option>spring water</option>
+      <option>deoionized water</option>
+      <option>osmosis purified water</option>
+      <option>x</option>
+      <option>...</option>
+    </select>
+  </div>
+
+  <div class="boxselezione">
+    <select >
+    	<!-- OLIO -->
+      <option>olive oil</option>
+      <option>castor oil</option>
+      <option>palm oil</option>
+      <option>palm kernel oil</option>
+      <option>soybean oil</option>
+      <option>almond oil</option>
+      <option>sunflower oil</option>
+      <option>x</option>
+      <option>...</option>
+    </select>
+  </div>
+
+  <div class="boxselezione">
+    <select >
+    	<!-- FRAGRANZA -->
+      <option>lavander</option>
+      <option>patchouli</option>
+      <option>fruit</option>
+      <option>baking soda + lemon juice</option>
+      <option>baking soda + milk + vinegard</option>
+      <option>sourdough starter</option>
+      <option>beaten egg whites</option>
+      <option>x</option>
+      <option>...</option>
+
+    </select>
+  </div>
+
+  <div class="boxselezione">
+    <select >
+    	<!-- COLORANTI -->
+      <option>colorant</option>
+      <option>rosemary</option>
+      <option>thyme</option>
+      <option>onion powder</option>
+      <option>garlic powder</option>
+      <option>parsley</option>
+      <option>cilantro</option>
+      <option>sage</option>
+      <option>celery seed</option>
+      <option>mint</option>
+      <option>nutmeg</option>
+      <option>basil</option>
+      <option>paprika</option>
+      <option>lemon juice or zest</option>
+      <option>vinegar</option>
+      <option>x</option>
+      <option>...</option>
+
+    </select>
+  </div>
+
+  <div> <input class="boxaggiungi boxselezione" placeholder="add an ingredient"></div>
+ <div> <input class="boxaggiungi boxselezione" placeholder="add an ingredient"></div>
+
+</form>
+		</div>
+		<button class="screen" onclick="takeScreenshot(event)">save soap recipe</button>
+		</div>
+
+			<!------  ----->
+			<!-- SHAMPOO -->
+			<!-------  ---->
+  		<p class="note" onclick="toggleCollapse()">shampoo</p>
+		<div class="collapse-content">
+		<div class="screenshot-section">
+		<form>
+  <div class="boxselezione">
+    <select >
+    	<!-- FARINA -->
+      <option>white flour</option>
+      <option>chickpea flour</option>
+      <option>rice flour</option>
+      <option>brown rice flour</option>
+      <option>almond flour</option>
+      <option>whole wheat flour</option>
+      <option>oat flour</option>
+      <option>coconut flour</option>
+      <option>spelt flour</option>
+      <option>rye flour</option>
+      <option>buckwheat flour</option>
+      <option>bean flour</option>
+      <option>ground mung bean</option>
+      <option>x</option>
+      <option>...</option>
+    </select>
+  </div>
+</form>
+		</div>
+		<button class="screen" onclick="takeScreenshot(event)">save shampoo recipe</button>
+		</div>
+
+			<!--------------->
+			<!-- DETERGENT -->
+			<!--------------->
+  		<p class="note" onclick="toggleCollapse()">detergent</p>
+		<div class="collapse-content">
+		<div class="screenshot-section">
+		<form>
+  <div class="boxselezione">
+    <select >
+    	<!-- FARINA -->
+      <option>white flour</option>
+      <option>chickpea flour</option>
+      <option>rice flour</option>
+      <option>brown rice flour</option>
+      <option>almond flour</option>
+      <option>whole wheat flour</option>
+      <option>oat flour</option>
+      <option>coconut flour</option>
+      <option>spelt flour</option>
+      <option>rye flour</option>
+      <option>buckwheat flour</option>
+      <option>bean flour</option>
+      <option>ground mung bean</option>
+      <option>x</option>
+      <option>...</option>
+    </select>
+  </div>
+</form>
+		</div>
+		<button class="screen" onclick="takeScreenshot(event)">save detergent recipe</button>
+		</div>
+
+
+
+		</div>
+
+	<!----------------->
+	<!-- INGREDIENTS -->
+	<!----------------->
+	<p class="note" onclick="toggleCollapse()">ingredients</p>
+<div class="collapse-content">
+
+			
+			<!-- oil -->
+			
+  		<p class="note" onclick="toggleCollapse()">olive oil</p>
+		<div class="collapse-content">
+			<p class="text2">you can use olive oil to create these products:</p> <br>
+		<a onclick="addIngredient(this)">  <p class="pinterlinea note"> bread </p></a> <br>
+		<p class="pinterlinea note"> soap </p>
+		</div>
+
+			
+			<!-- water -->
+			
+  		 		<p class="note" onclick="toggleCollapse()">water</p>
+		<div class="collapse-content">
+		<p>bread</p>
+		</div>
+
+			
+			<!-- vinegar -->
+			
+  		<p class="note" onclick="toggleCollapse()">vinegar</p>
+		<div class="collapse-content">
+		<p>bread</p>
+		</div>
+
+			
+			<!-- lye -->
+			
+  		<p class="note" onclick="toggleCollapse()">lye</p>
+		<div class="collapse-content">
+		<p>bread</p>
+		</div>
+
+	
+		</div>
+
+	<!------------------>
+	<!--saved RECIPIES-->
+	<!------------------>
+	<p class="note" onclick="toggleCollapse()">saved recipes</p>
+<div class="collapse-content">
+  <div id="screenshot-gallery">  </div>
+  <button class="screen">print your recipe book</button>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<!----------->
+<!-- PROVA -->
+<!----------->
+
+  
+
+
+
+
+
+
+<!-- END -->
+	<script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
