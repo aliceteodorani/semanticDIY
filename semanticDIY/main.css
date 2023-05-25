@@ -1,0 +1,162 @@
+img {
+	filter: grayscale(100%) sepia(100%) hue-rotate(70deg) brightness(1) contrast(0.9);
+	max-height: 200px;
+	margin-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+
+}
+
+
+/*-------------------*/
+/*-----collapse------*/
+/*-------------------*/
+
+.note {color: rgb(200,200,200);
+	   cursor:pointer;
+	   text-decoration:none;
+}
+.note:hover {color: rgb(0, 256, 0);
+			
+}
+
+form {
+	    width: max-content;
+}
+
+.boxselezione {
+	margin-bottom: -4.6px;
+	margin-top: 0px;
+	width: max-content;
+}
+
+.boxaggiungi {
+	max-height: 24px;
+	color: black;
+	width: 311px;
+}
+
+p.boxaggiungi {
+	color: rgb(200,200,200);
+}
+
+    .collapse-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      padding: 0px;
+  	  margin-left: 3%;
+    }
+
+    .collapse-content.collapsed {
+      max-height: fit-content;
+      transition: max-height 0.2s ease-in;
+    }
+
+/*-------------------*/
+/*-----colonnee------*/
+/*-------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  margin-top: 10px;
+  float: left;
+}
+
+.left {
+  width: 25px;
+}
+
+.right {
+  width: 90%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-------------------*/
+/*-------body--------*/
+/*-------------------*/
+
+* {
+	font-family: Menlo;
+}
+
+.head {
+	line-height: 20px; 
+	color: rgb(20, 20, 20);
+	margin-left: 15px;
+	display: inline-block;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+p, h6 {
+	color: rgb(200,200,200); 
+	line-height: 0px; 
+	display: inline-block;   
+}
+
+.pnumeri{
+	color: rgb(100,100,100); 
+	line-height: 28px; 
+	font-size: 10px; 
+	display: inline-block; 
+}
+.pabout{
+	color: rgb(200,200,200); 
+	line-height: 28px; 
+	display: inline-block; 
+	margin-bottom: 0px; 
+}
+.pinterlinea{
+	color: rgb(200,200,200); 
+	line-height: 27.25px; 
+	display: inline-block; 
+	margin-bottom: 0px; 
+}
+/*arancione*/
+.label1 {
+	color: rgb(180,180,256); 
+}
+/*violetto*/
+.label2 {
+	color: rgb(256,120,30); 
+}
+/*grigio*/
+.label3 {
+	color: rgb(200,200,200); 
+}
+
+
+/*-------------------------*/
+/*------screen button------*/
+/*-------------------------*/
+
+.screen {
+	color: black;
+	background-color: rgb(200,200,200); 
+	max-height: 24.4px;
+	width: 311px;
+	text-align: center;
+	text-justify: auto;
+	font-size: 80%;
+
+}
+
+
+.screen:hover {
+	color: rgb(0,256,20);
+	background-color: black; 
+}
+
+
+.screenshot-section {
+	width: max-content;
+}
