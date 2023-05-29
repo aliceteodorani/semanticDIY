@@ -14,10 +14,6 @@
 </head>
 <body>
 
-<!--<audio autoplay loop>
-  <source src="terekke.mp3" type="audio/mpeg">
-</audio> -->
-
 <!------------>
 <!-- HEADER -->
 <!------------>
@@ -40,367 +36,702 @@
 <!--------->
 	<div class="column right ">
 
-		<!---------->
-		<!-- ABOUT-->
-		<!---------->
+    <!-------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------->
+	<!-----------------------------------ABOUT---------------------------------------->
+	<!-------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------->
 		<p class="note" onclick="toggleCollapse()">about</p>
 <div class="collapse-content">
-  <p class="pinterlinea">Welcome to Semantic DIY, a website where you can create your own recipes for a range of everyday products, including soaps, detergents, shampoos, and even food. Our platform is called "semantic" because it allows you to modify the recipes based on ingredients you already have at home, finding substitutes for those you don't, and customizing your products to suit your preferences.
-By using Semantic DIY, you have the power to take control over the products you use every day. You can avoid buying from big companies and contributing to their profits, while also reducing waste and pollution associated with packaging. Our platform empowers you to create sustainable, eco-friendly products that are tailored to your needs.
-We believe that everyone deserves the opportunity to make a positive impact on the environment and take charge of their own health and well-being. Our mission is to make sustainable living accessible and convenient for everyone, by providing a platform that is easy to use and customize.
-Join the Semantic DIY community today and start creating your own recipes for a better, more sustainable future.</p> </div>
+  <p class="pabout">Welcome to Semantic DIY, a platform that empowers you to take control over your household products, from personal care items 
+to cleaning solutions and food.
 
-	<!-------------->
-	<!-- PRODUCTS -->
-	<!-------------->
-	<p id="allProducts" class="note" onclick="toggleCollapse()" >all products</p>
+Our mission is to provide easy-to-use recipes composed by simple, accessible ingredients you can find in your local areas. You will be given a general formula for every product, allowing you to modify it finding substitutes for every component. Everyone deserves the opportunity to make a positive impact on the environment and take charge of their own health and well-being. That’s why Semantic 
+DIY wants to make sustainable living accessible and convenient for everyone by providing a customizable platform. The recipes are carefully curated to ensure that they're not only tailored to your needs but also effective. 
+
+Small changes can have a big impact, therefore we encourage every user to make conscious choices when it comes to buying every-day goods. By using Semantic DIY, you can reduce your reliance on products from corporations, cut down on plastic waste, and make 
+a positive impact on the planet. The website is designed to be easy to navigate, with a simple interface that every device can support.
+
+Start exploring our wide range of recipes. Save your personal ones, download a pdf or print them out to create your own sustainable-product recipe book. From homemade soaps to toothpaste to bread, the possibilities are endless. Start creating your own sustainable products today for a better future.</p> </div>
+
+<p class="note" onclick="toggleCollapse()">how to use</p>
 <div class="collapse-content">
+  <p class="pabout">Select a product. Given the recipe modify the ingredients depending on what you already have at home. Generate immediately the steps to realize your formula or add it to the saved collection. When you've collected all your recipes you can print them or just download a pdf.</p> </div>
+
+	<!-------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------->
+	<!---------------------------------PRODUCTS--------------------------------------->
+	<!-------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------->
+	<p id="allProducts" class="note" onclick="toggleCollapse()" >products</p>
+<div class="allProductsContent collapse-content">
 
 			<!----------->
 			<!-- BREAD -->
 			<!----------->
+
   		<p class="note" onclick="toggleCollapse()" id="bread" >bread</p>
 		<div class="collapse-content">
-		<div class="screenshot-section">
-		<form>
-  <div class="boxselezione">
-    <select >
-    	<!-- FARINA -->
-      <option>white flour</option>
-      <option>chickpea flour</option>
-      <option>rice flour</option>
-      <option>brown rice flour</option>
-      <option>almond flour</option>
-      <option>whole wheat flour</option>
-      <option>oat flour</option>
-      <option>coconut flour</option>
-      <option>spelt flour</option>
-      <option>rye flour</option>
-      <option>buckwheat flour</option>
-      <option>bean flour</option>
-      <option>ground mung bean</option>
-      <option>x</option>
-      <option>...</option>
-    </select>
-  </div>
+			<p class="pinterlinea"> The principal ingredients in all bread are:</p> <p class="label2">flour</p> <p class="pinterlinea">//</p> <p class="label2">water</p> <p class="pinterlinea">//</p> <p class="label2">yeast</p>  <p class="pinterlinea">//</p> <p class="label2">salt</p> <p class="pinterlinea">Fats provide better slicing, it tenderizes baked items and helps in prolonging shelf life. A tablespoon or two of sugar can be a wonderful addition to your bread, it will create a beautiful and delicious caramelization of the crust. YOu will also get a faster rise time, longer shelf life, and an overall moister and lighter loaf. Bread can still be made without adding sugar. However, removing sugar from the recipe will alter its texture, taste, freshness, and speed of the rise. Without sugar, yeast can still multiply by feeding on the naturally occurring sugar and starches in flour.</p> 
+			<div class="screenshot-section">
+			<form>
+	  <div class="boxselezione">
+	    <select >
+	    	<!-- FARINA -->
+	      <option>choose a grain</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>white flour</option>
+	      <option>chickpea flour</option>
+	      <option>rice flour</option>
+	      <option>brown rice flour</option>
+	      <option>almond flour</option>
+	      <option>whole wheat flour</option>
+	      <option>oat flour</option>
+	      <option>coconut flour</option>
+	      <option>spelt flour</option>
+	      <option>rye flour</option>
+	      <option>buckwheat flour</option>
+	      <option>bean flour</option>
+	      <option>ground mung bean</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
 
-  <div class="boxselezione">
-    <select >
-    	<!-- ACQUA -->
-      <option>water</option>
-      <option>distilled water</option>
-      <option>milk</option>
-      <option>almond milk</option>
-      <option>coconut milk</option>
-      <option>rice milk</option>
-      <option>x</option>
-      <option>...</option>
-    </select>
-  </div>
+	  <div class="boxselezione">
+	    <select >
+	    	<!-- ACQUA -->
+	      <option>choose a liquid</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>water</option>
+	      <option>distilled water</option>
+	      <option>milk</option>
+	      <option>almond milk</option>
+	      <option>coconut milk</option>
+	      <option>rice milk</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
 
-  <div class="boxselezione">
-    <select >
-    	<!-- LIEVITO -->
-      <option>yeast</option>
-      <option>baking powder</option>
-      <option>baking soda</option>
-      <option>baking soda + lemon juice</option>
-      <option>baking soda + milk + vinegard</option>
-      <option>sourdough starter</option>
-      <option>beaten egg whites</option>
-      <option>x</option>
-      <option>...</option>
+	  <div class="boxselezione">
+	    <select >
+	    	<!-- LIEVITO -->
+	      <option>choose a leavener</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>baker's yeast</option>
+	      <option>baking powder</option>
+	      <option>baking soda</option>
+	      <option>baking soda + lemon juice</option>
+	      <option>baking soda + milk + vinegard</option>
+	      <option>sourdough starter</option>
+	      <option>beaten egg whites</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
 
-    </select>
-  </div>
+	  <div class="boxselezione">
+	    <select >
+	    	<!-- SALE -->
+	      <option>choose salt or a substitute</option>
+		  <option disabled>——————————————————————————————</option>
+	      <option>salt</option>
+	      <option>rosemary</option>
+	      <option>thyme</option>
+	      <option>onion powder</option>
+	      <option>garlic powder</option>
+	      <option>parsley</option>
+	      <option>cilantro</option>
+	      <option>sage</option>
+	      <option>celery seed</option>
+	      <option>mint</option>
+	      <option>nutmeg</option>
+	      <option>basil</option>
+	      <option>paprika</option>
+	      <option>lemon juice or zest</option>
+	      <option>vinegar</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
 
-  <div class="boxselezione">
-    <select >
-    	<!-- OLIO -->
-      <option>olive oil</option>
-      <option>almond oil</option>
-      <option>avocado oil</option>
-      <option>coconut oil</option>
-      <option>flaxseed oil</option>
-      <option>sunflower oil</option>
-      <option>peanut oil</option>
-      <option>walnut oil</option>
-      <option>grapeseed oil</option>
-      <option>canola oil</option>
-      <option>butter</option>
-      <option>peanut butter </option>
-      <option>mashed banana</option>
-      <option>x</option>
-      <option>...</option>
-    </select>
-  </div>
+	  <div class="boxselezione">
+	    <select >
+	    	<!-- OLIO -->
+	      <option>choose a fat</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>olive oil</option>
+	      <option>almond oil</option>
+	      <option>avocado oil</option>
+	      <option>coconut oil</option>
+	      <option>flaxseed oil</option>
+	      <option>sunflower oil</option>
+	      <option>peanut oil</option>
+	      <option>walnut oil</option>
+	      <option>grapeseed oil</option>
+	      <option>canola oil</option>
+	      <option>butter</option>
+	      <option>peanut butter </option>
+	      <option>mashed banana</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label3">+</label>
+	  </div>
 
-  <div class="boxselezione">
-    <select >
-    	<!-- SALE -->
-      <option>salt</option>
-      <option>rosemary</option>
-      <option>thyme</option>
-      <option>onion powder</option>
-      <option>garlic powder</option>
-      <option>parsley</option>
-      <option>cilantro</option>
-      <option>sage</option>
-      <option>celery seed</option>
-      <option>mint</option>
-      <option>nutmeg</option>
-      <option>basil</option>
-      <option>paprika</option>
-      <option>lemon juice or zest</option>
-      <option>vinegar</option>
-      <option>x</option>
-      <option>...</option>
+	  <div class="boxselezione">
+	    <select >
+	    	<!-- ZUCCHERO -->
+	      <option>choose a sugar</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>white sugar</option>
+	      <option>brown sugar</option>
+	      <option>coconut sugar</option>
+	      <option>palm sugar</option>
+	      <option>stevia</option>
+	      <option>honey</option>
+	      <option>dates</option>
+	      <option>yacon syrup</option>
+	      <option>maple syrup</option>
+	      <option>erythritol</option>
+	      <option>xylitol</option>
+	      <option>x</option>
+	    </select>
+	    <label class="label3">+</label>
+	  </div>
+	 <div> <input class="boxaggiungi" placeholder="add an additional flavor"> <label class="label3">=</label> </div>
+	</form>
+	<button class="screen" onclick="takeScreenshot(event)">add bread recipe to collection</button>
+	</div>
+	<button class="generate" onclick="toggleCollapse()">generate steps</button> 
+	<div class="collapse-content"> 
+<p class="pgenerate">Steps: In a large bowl, dissolve yeast (1/4 ounce) and 1/2 teaspoon sugar in warm water; let stand until bubbles form on surface. Whisk together remaining 3 tablespoons sugar, 1 tablespoon salt and 3 cups flour. Stir 2 tablespoons canola oil into yeast mixture; pour into flour mixture and beat until smooth. Stir in enough remaining flour, 1/2 cup at a time, to form a soft dough.
+Turn onto a floured surface; knead until smooth and elastic, 8-10 minutes. Place in a greased bowl, turning once to grease the top. Cover and let rise in a warm place until doubled, 1-1/2 to 2 hours.
+Punch dough down. Turn onto a lightly floured surface; divide dough in half. Shape each into a loaf. Place in 2 greased 9x5-in. loaf pans. Cover and let rise until doubled, 1 to 1-1/2 hours.
+Bake at 375° until loaf is golden brown and sounds hollow when tapped or has reached an internal temperature of 200°, 30-35 minutes. Remove from pans to wire racks to cool.
+</p> </div>
 
-    </select>
-  </div>
+	
+			</div>
 
-  <div class="boxselezione">
-    <select >
-    	<!-- ZUCCHERO -->
-      <option>white sugar</option>
-      <option>brown sugar</option>
-      <option>coconut sugar</option>
-      <option>palm sugar</option>
-      <option>stevia</option>
-      <option>honey</option>
-      <option>dates</option>
-      <option>yacon syrup</option>
-      <option>maple syrup</option>
-      <option>erythritol</option>
-      <option>xylitol</option>
-      <option>x</option>
-      <option>...</option>
-    </select>
-  </div>
+			<!--------------->
+			<!---- GLUE ----->
+			<!--------------->
 
- <div> <input class="boxaggiungi boxselezione" placeholder="add an ingredient"></div>
- <div> <input class="boxaggiungi boxselezione" placeholder="add an ingredient"></div>
+  		<p class="note" onclick="toggleCollapse()" id="bread" >glue</p>
+		<div class="collapse-content">
+			<p class="pinterlinea"> The ingredients for homemade glue are:</p> <p class="label2">water</p> <p class="pinterlinea">//</p> <p class="label2">syrup</p> <p class="pinterlinea">//</p> <p class="label2">vinegar</p> <p class="pinterlinea">//</p> <p class="label2">cornstarch</p><p class="pinterlinea">Milk Paint is an ancient organic paint made using basic, natural ingredients, it is easier to use, faster to dry and better for the environment. You can add optional ingredients such as owdered pigments to give a precise colour to your paint. For painting over furniture with an aged and almost translucent finish, milk paint should be your go-to. The texture tends to be a bit thinner than other paints, which creates a beautiful vintage effect when layered over wood. </p> 
+			<div class="screenshot-section">
+			<form>
+				<!-- ACQUA -->
+	  <div class="boxselezione">
+	    <select >
+	     <option>choose a liquid</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>water</option>
+	      <option>distilled water</option>
+	      <option>milk</option>
+	      <option>almond milk</option>
+	      <option>coconut milk</option>
+	      <option>rice milk</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+			<!-- SYRUP -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a syrup</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>corn syrup</option>
+	      <option>maple syrup</option>
+	      <option>honey</option>
+	      <option>stevia</option>
+	      <option>golden syrup</option>
+	      <option>molasses</option>
+	      <option>sugar + water</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+	    	<!-- ACETO -->
+	  <div class="boxselezione">
+	    <select >
+	       <option>choose an aqueous solution</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>vinegar</option>
+	      <option>muslin yarn</option>
+	      <option>coffee filters</option>
+	      <option>thick paper towels</option>
+	      <option>medical gauze</option>
+	      <option>cotton hankies</option>
+	      <option>fine sieve</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+	  <!-- CORNSTARCH -->
+	  <div class="boxselezione">
+	    <select >
+	     <option>choose a thickener</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>cornstarch</option>
+	      <option>arrowroot powder</option>
+	      <option>flour</option>
+	      <option>tapioca starch</option>
+	      <option>sweet rice flour</option>
+	      <option>potato starch</option>
+	      <option>xanthan gum</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+<div> <input class="boxaggiungi" placeholder="add an additional flavor"> <label class="label3">=</label> </div>
+	</form>
+	<button class="screen" onclick="takeScreenshot(event)">add glue recipe to collection</button>
+	</div>
+	<button class="generate" onclick="toggleCollapse()">see generated steps </button> 
+	<div class="collapse-content"> 
+<p class="pgenerate">Step 1: Cook glue. Add 3/4 cup water, 2 tablespoons corn syrup, and 1 teaspoon vinegar to a pot. Stir, and bring to a boil over medium-high heat. Whisk together 1/2 cup of water and 1/4 cup cornstarch. Pour it into the pot and stir well. Allow the mixture to come to a boil again, then remove it from the heat immediately.  <br> Step 2: Cooling time.
+Pour your homemade glue into a mason jar, or other sealable container, and let it cool for at least two hours (with the lid off) before using. Your homemade glue is complete! Enjoy using your homemade glue on paper, popsicle sticks, googly eyes, and more!
+</p> </div>
 
-</form>
-</div>
-<button class="screen" onclick="takeScreenshot(event)">save bread recipe</button>
-		</div>
+	
+			</div>
 
-			<!---------->
+			<!----------->
+			<!-- PAINT -->
+			<!----------->
+
+  		<p class="note" onclick="toggleCollapse()" id="bread" >paint</p>
+		<div class="collapse-content">
+			<p class="pinterlinea"> The basic ingredients for homemade (milk) paint are:</p> <p class="label2">skim milk</p> <p class="pinterlinea">//</p> <p class="label2">lime juice</p> <p class="pinterlinea">//</p> <p class="label2">cheesecloth</p> <p class="pinterlinea">Milk Paint is an ancient organic paint made using basic, natural ingredients, it is easier to use, faster to dry and better for the environment. You can add optional ingredients such as owdered pigments to give a precise colour to your paint. For painting over furniture with an aged and almost translucent finish, milk paint should be your go-to. The texture tends to be a bit thinner than other paints, which creates a beautiful vintage effect when layered over wood. </p> 
+			<div class="screenshot-section">
+			<form>
+				<!-- LATTE -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a milk</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>skim milk</option>
+	      <option>soy milk</option>
+	      <option>oat milk</option>
+	      <option>almond milk</option>
+	      <option>cashew milk</option>
+	      <option>coconut milk</option>
+	      <option>hemp milk</option>
+	      <option>rice milk</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+			<!-- LIME -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a acid liquid</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>lime juice</option>
+	      <option>lemon juice</option>
+	      <option>orange juice</option>
+	      <option>tangerine juice</option>
+	      <option>white wine</option>
+	      <option>tamarind</option>
+	      <option>vinegar</option>
+	      <option>apple sider</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+	    	<!-- GARZA -->
+	  <div class="boxselezione">
+	    <select >
+	       <option>choose a cloth</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>cheesecloth</option>
+	      <option>muslin yarn</option>
+	      <option>coffee filters</option>
+	      <option>thick paper towels</option>
+	      <option>medical gauze</option>
+	      <option>cotton hankies</option>
+	      <option>fine sieve</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+	  <!-- COLORANTI -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a colorant</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>pigments</option>
+	      <option>carotenoids</option>
+	      <option>anthocyanins</option>
+	      <option>betalains</option>
+	      <option>dried spinach</option>
+	      <option>annatto</option>
+	      <option>saffron</option>
+	      <option>turmeric ground</option>
+	      <option>red pepper</option>
+	      <option>cinnamon</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label3">+</label>
+	  </div>
+<div> <input class="boxaggiungi" placeholder="add an additional flavor"> <label class="label3">=</label> </div>
+	</form>
+	<button class="screen" onclick="takeScreenshot(event)">add paint recipe to collection</button>
+	</div>
+	<button class="generate" onclick="toggleCollapse()">see generated steps </button> 
+	<div class="collapse-content"> 
+<p class="pgenerate">Step 1: Start by curdling the milk. You can do so in virtually any container; use whatever you have at ready disposal, be it a sauce pot or a frying pan. Pour in the liquids, using a half-cup of lime juice for every quart of skim milk, then wait. The curds must be allowed plenty of time to separate. Let the curdling milk sit overnight at room temperature.  <br> Step 2: Tie cheesecloth over a large mixing bowl or a sieve. Next, pour the curdled milk into your chosen receptacle. Watch as the cheesecloth separates the whey from the curds. Once they are strained, rinse the curds in water, then keep them moist. If the curds get too dry, your milk paint is liable to end up being gritty. <br> Step 3: Having chosen the pigment you like best, add a sprinkle of the powder to the curds, then stir. Remember that the more pigment you use, the darker your milk paint is going to be. As a precaution, wear a dust mask when handling pigments; even the natural variety contains airborne particles that can irritate the lungs. Any porous surface (including wood) accepts milk paint. Because the stuff lightens a bit once it’s dry, a few coats may be necessary in order to get the color you want. Most important, waste little time before using the milk paint; it spoils within only a few days. And if you’re painting outdoors—or live somewhere with high humidity—it’s strongly recommended that you protect the paint job you’ve worked so hard to complete with a coat of water- or oil-based polyurethane sealer.
+
+
+</p> </div>
+
+	
+			</div>
+
+
+			<!----------->
 			<!-- SOAP -->
-			<!---------->
-  		 		<p class="note" onclick="toggleCollapse()">soap</p>
+			<!----------->
+
+  		<p class="note" onclick="toggleCollapse()" id="bread" >soap</p>
 		<div class="collapse-content">
-		<div class="screenshot-section">
-		<form>
-  <div class="boxselezione">
-    <select >
-    	<!-- GRASSO -->
-      <option>lye</option>
-      <option>ashes + water</option>
-      <option>rice flour</option>
-      <option>caustic soda</option>
-      <option>sodium carbonate</option>
-      <option>x</option>
-      <option>...</option>
-    </select>
-  </div>
+			<p class="pinterlinea"> The basic ingredients of soap are:</p> <p class="label2">animal fat</p> <p class="pinterlinea"> or</p> <p class="label2"> vegetable oil</p> <p class="pinterlinea">//</p> <p class="label2">lye</p> <p class="pinterlinea">//</p> <p class="label2">water</p> <p class="pinterlinea">You can add optional ingredients such as essential or skin-safe fragrance oils,colorants, even flowers, fruit and plants. Essential oils are really suggested since they are key to soap making. They not only add a beautiful scent to your homemade soaps, but they also bring the wonderful properties that come with each oil such as calming, energising or anti-ageing.</p> 
+			<div class="screenshot-section">
+			<form>
+				<!-- OLIO -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a fat</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>olive oil</option>
+	      <option>castor oil</option>
+	      <option>palm oil</option>
+	      <option>palm kernel oil</option>
+	      <option>soybean oil</option>
+	      <option>almond oil</option>
+	      <option>sunflower oil</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+			<!-- GRASSO -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a lye</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>lye</option>
+	      <option>ashes + water</option>
+	      <option>rice flour</option>
+	      <option>caustic soda</option>
+	      <option>sodium carbonate</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+	    	<!-- ACQUA -->
+	  <div class="boxselezione">
+	    <select >
+	       <option>choose a water</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>water</option>
+	      <option>distilled water</option>
+	      <option>heated mineral water</option>
+	      <option>spring water</option>
+	      <option>deoionized water</option>
+	      <option>osmosis purified water</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+	  <!-- COLORANTI -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a colorant</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>dyes</option>
+	      <option>carrots</option>
+	      <option>coffee</option>
+	      <option>cocoa powder</option>
+	      <option>dried spinach</option>
+	      <option>annatto</option>
+	      <option>saffron</option>
+	      <option>turmeric ground</option>
+	      <option>red pepper</option>
+	      <option>cinnamon</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label3">+</label>
+	  </div>
+	    	<!-- FRAGRANZA -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a fragrance</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>lavander</option>
+	      <option>patchouli</option>
+	      <option>fruit</option>
+	      <option>sandalwood</option>
+	      <option>basil</option>
+	      <option>thyme</option>
+	      <option>sage</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label3">+</label>
+	  </div>
+<div> <input class="boxaggiungi" placeholder="add an additional flavor"> <label class="label3">=</label> </div>
+	</form>
+	<button class="screen" onclick="takeScreenshot(event)">add soap recipe to collection</button>
+	</div>
+	<button class="generate" onclick="toggleCollapse()">see generated steps </button> 
+	<div class="collapse-content"> 
+<p class="pgenerate">Step 1: Start by curdling the milk. You can do so in virtually any container; use whatever you have at ready disposal, be it a sauce pot or a frying pan. Pour in the liquids, using a half-cup of lime juice for every quart of skim milk, then wait. The curds must be allowed plenty of time to separate. Let the curdling milk sit overnight at room temperature.  <br> Step 2: Tie cheesecloth over a large mixing bowl or a sieve. Next, pour the curdled milk into your chosen receptacle. Watch as the cheesecloth separates the whey from the curds. Once they are strained, rinse the curds in water, then keep them moist. If the curds get too dry, your milk paint is liable to end up being gritty. <br> Step 3: Having chosen the pigment you like best, add a sprinkle of the powder to the curds, then stir. Remember that the more pigment you use, the darker your milk paint is going to be. As a precaution, wear a dust mask when handling pigments; even the natural variety contains airborne particles that can irritate the lungs. Any porous surface (including wood) accepts milk paint. Because the stuff lightens a bit once it’s dry, a few coats may be necessary in order to get the color you want. Most important, waste little time before using the milk paint; it spoils within only a few days. And if you’re painting outdoors—or live somewhere with high humidity—it’s strongly recommended that you protect the paint job you’ve worked so hard to complete with a coat of water- or oil-based polyurethane sealer.
 
-  <div class="boxselezione">
-    <select >
-    	<!-- ACQUA -->
-      <option>water</option>
-      <option>distilled water</option>
-      <option>heated mineral water</option>
-      <option>spring water</option>
-      <option>deoionized water</option>
-      <option>osmosis purified water</option>
-      <option>x</option>
-      <option>...</option>
-    </select>
-  </div>
 
-  <div class="boxselezione">
-    <select >
-    	<!-- OLIO -->
-      <option>olive oil</option>
-      <option>castor oil</option>
-      <option>palm oil</option>
-      <option>palm kernel oil</option>
-      <option>soybean oil</option>
-      <option>almond oil</option>
-      <option>sunflower oil</option>
-      <option>x</option>
-      <option>...</option>
-    </select>
-  </div>
+</p> </div>
 
-  <div class="boxselezione">
-    <select >
-    	<!-- FRAGRANZA -->
-      <option>lavander</option>
-      <option>patchouli</option>
-      <option>fruit</option>
-      <option>baking soda + lemon juice</option>
-      <option>baking soda + milk + vinegard</option>
-      <option>sourdough starter</option>
-      <option>beaten egg whites</option>
-      <option>x</option>
-      <option>...</option>
+	
+			</div>
 
-    </select>
-  </div>
 
-  <div class="boxselezione">
-    <select >
-    	<!-- COLORANTI -->
-      <option>colorant</option>
-      <option>rosemary</option>
-      <option>thyme</option>
-      <option>onion powder</option>
-      <option>garlic powder</option>
-      <option>parsley</option>
-      <option>cilantro</option>
-      <option>sage</option>
-      <option>celery seed</option>
-      <option>mint</option>
-      <option>nutmeg</option>
-      <option>basil</option>
-      <option>paprika</option>
-      <option>lemon juice or zest</option>
-      <option>vinegar</option>
-      <option>x</option>
-      <option>...</option>
+			<!---------------->
+			<!-- TOOTHPASTE -->
+			<!---------------->
 
-    </select>
-  </div>
-
-  <div> <input class="boxaggiungi boxselezione" placeholder="add an ingredient"></div>
- <div> <input class="boxaggiungi boxselezione" placeholder="add an ingredient"></div>
-
-</form>
-		</div>
-		<button class="screen" onclick="takeScreenshot(event)">save soap recipe</button>
-		</div>
-
-			<!------  ----->
-			<!-- SHAMPOO -->
-			<!-------  ---->
-  		<p class="note" onclick="toggleCollapse()">shampoo</p>
+  		<p class="note" onclick="toggleCollapse()" id="bread" >toothpaste</p>
 		<div class="collapse-content">
-		<div class="screenshot-section">
-		<form>
-  <div class="boxselezione">
-    <select >
-    	<!-- FARINA -->
-      <option>white flour</option>
-      <option>chickpea flour</option>
-      <option>rice flour</option>
-      <option>brown rice flour</option>
-      <option>almond flour</option>
-      <option>whole wheat flour</option>
-      <option>oat flour</option>
-      <option>coconut flour</option>
-      <option>spelt flour</option>
-      <option>rye flour</option>
-      <option>buckwheat flour</option>
-      <option>bean flour</option>
-      <option>ground mung bean</option>
-      <option>x</option>
-      <option>...</option>
-    </select>
-  </div>
-</form>
-		</div>
-		<button class="screen" onclick="takeScreenshot(event)">save shampoo recipe</button>
+			<p class="pinterlinea"> The basic ingredients for homemade toothpaste are:</p> <p class="label2">baking soda</p> <p class="pinterlinea">//</p> <p class="label2">salt</p> <p class="pinterlinea">//</p> <p class="label2">water</p> <p class="pinterlinea">or</p> <p class="label2">coconut oil</p> <p class="pinterlinea">Homemade toothpaste can be just as effective at plaque removal as store-bought toothpaste. After all, any toothpaste serves as an abrasive to help remove plaque and food from tooth surfaces.A key ingredient in toothpaste is sodium chloride, aka table salt. The salt works as a gentle abrasive, helping to remove stains from the teeth, disinfect the mouth and reduce inflammation in the gums. You can add optional thickeners like organic arrowroot powder, flour or cornstach. You can even add powdered spices or other ingredients to give a specific flavour to your product.</p> 
+			<div class="screenshot-section">
+			<form>
+				<!-- BAKING SODA -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a soda</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>baking soda</option>
+	      <option>baking powder</option>
+	      <option>self-rising flour</option>
+	      <option>club soda</option>
+	      <option>potassium bicarbonate</option>
+	      <option>potassium bicarbonate</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+			<!-- SALT -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose salt or a substitute</option>
+		  <option disabled>——————————————————————————————</option>
+	      <option>salt</option>
+	      <option>rosemary</option>
+	      <option>thyme</option>
+	      <option>onion powder</option>
+	      <option>garlic powder</option>
+	      <option>parsley</option>
+	      <option>cilantro</option>
+	      <option>sage</option>
+	      <option>celery seed</option>
+	      <option>mint</option>
+	      <option>nutmeg</option>
+	      <option>basil</option>
+	      <option>paprika</option>
+	      <option>lemon juice or zest</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+	    	<!-- WATER -->
+	  <div class="boxselezione">
+	    <select >
+	       <option>choose a liquid ingredient</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>water</option>
+	      <option>distilled water</option>
+	      <option>coconut oil</option>
+	      <option>avocado oil</option>
+	      <option>neutral oil</option>
+	      <option>grapeseed oil</option>
+	      <option>sunflower oil</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label2">+</label>
+	  </div>
+
+	  <!-- THICKENER -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a thickener</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>arrowroot powder</option>
+	      <option>flour</option>
+	      <option>cornstarch</option>
+	      <option>tapioca starch</option>
+	      <option>sweet rice flour</option>
+	      <option>potato starch</option>
+	      <option>xanthan gum</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label3">+</label>
+	  </div>
+	   <!-- FLAVOUR -->
+	  <div class="boxselezione">
+	    <select >
+	      <option>choose a flavour</option>
+	      <option disabled>——————————————————————————————</option>
+	      <option>powdered spices</option>
+	      <option>mint</option>
+	      <option>ginger</option>
+	      <option>cinnamon</option>
+	      <option>cloves</option>
+	      <option>stelvia</option>
+	      <option>oil</option>
+	      <option>extracts</option>
+	      <option>x</option>
+	      <option>...</option>
+	    </select>
+	    <label class="label3">+</label>
+	  </div>
+<div> <input class="boxaggiungi" placeholder="add an additional flavor"> <label class="label3">=</label> </div>
+	</form>
+	<button class="screen" onclick="takeScreenshot(event)">add toothpaste recipe to collection</button>
+	</div>
+	<button class="generate" onclick="toggleCollapse()">see generated steps </button> 
+	<div class="collapse-content"> 
+<p class="pgenerate">Step 1: Start by curdling the milk. You can do so in virtually any container; use whatever you have at ready disposal, be it a sauce pot or a frying pan. Pour in the liquids, using a half-cup of lime juice for every quart of skim milk, then wait. The curds must be allowed plenty of time to separate. Let the curdling milk sit overnight at room temperature.  <br> Step 2: Tie cheesecloth over a large mixing bowl or a sieve. Next, pour the curdled milk into your chosen receptacle. Watch as the cheesecloth separates the whey from the curds. Once they are strained, rinse the curds in water, then keep them moist. If the curds get too dry, your milk paint is liable to end up being gritty. <br> Step 3: Having chosen the pigment you like best, add a sprinkle of the powder to the curds, then stir. Remember that the more pigment you use, the darker your milk paint is going to be. As a precaution, wear a dust mask when handling pigments; even the natural variety contains airborne particles that can irritate the lungs. Any porous surface (including wood) accepts milk paint. Because the stuff lightens a bit once it’s dry, a few coats may be necessary in order to get the color you want. Most important, waste little time before using the milk paint; it spoils within only a few days. And if you’re painting outdoors—or live somewhere with high humidity—it’s strongly recommended that you protect the paint job you’ve worked so hard to complete with a coat of water- or oil-based polyurethane sealer.
+
+
+</p> </div>
+
+	
+			</div>
+
+
+
 		</div>
 
-			<!--------------->
-			<!-- DETERGENT -->
-			<!--------------->
-  		<p class="note" onclick="toggleCollapse()">detergent</p>
-		<div class="collapse-content">
-		<div class="screenshot-section">
-		<form>
-  <div class="boxselezione">
-    <select >
-    	<!-- FARINA -->
-      <option>white flour</option>
-      <option>chickpea flour</option>
-      <option>rice flour</option>
-      <option>brown rice flour</option>
-      <option>almond flour</option>
-      <option>whole wheat flour</option>
-      <option>oat flour</option>
-      <option>coconut flour</option>
-      <option>spelt flour</option>
-      <option>rye flour</option>
-      <option>buckwheat flour</option>
-      <option>bean flour</option>
-      <option>ground mung bean</option>
-      <option>x</option>
-      <option>...</option>
-    </select>
-  </div>
-</form>
-		</div>
-		<button class="screen" onclick="takeScreenshot(event)">save detergent recipe</button>
-		</div>
-
-
-
-		</div>
-
-	<!----------------->
-	<!-- INGREDIENTS -->
-	<!----------------->
+	<!-------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------->
+	<!-------------------------------INGREDIENTS-------------------------------------->
+	<!-------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------->
 	<p class="note" onclick="toggleCollapse()">ingredients</p>
 <div class="collapse-content">
 
 			
-			<!-- oil -->
+		<!-- flour -->
+			
+  		<p class="note" onclick="toggleCollapse()">flour</p>
+		<div class="collapse-content">
+			<p class="pinterlinea">Flour contains protein and when it comes in contact with water and heat it produces gluten, which gives elasticity and strength to baked goods. Different types of flour contain different amounts of protein. Therefore depending on which type of flour you use in a recipe, you will get a different outcome of the baked good. Use flour to recreate the following recipes!</p> 
+		<a onclick="addIngredient(this)">  <p class="label1 note"> bread </p></a> <p class="pinterlinea">//</p>
+		<a onclick="addIngredient(this)"> <p class="label1 note"> toothpaste </p></a>
+		</div>
+
+		<!-- milk -->
+			
+  		<p class="note" onclick="toggleCollapse()">milk</p>
+		<div class="collapse-content">
+			<p class="pinterlinea"> The physical properties of milk include fluid flow, mixing and churning, emulsification and homogenization, as well as heat transfer processes such as pasteurization, sterilization, evaporation, dehydration, chilling, and freezing. Milk performs many functions in your baked goods. It serves as a source of liquid to hydrate the dry ingredients, adds flavor, supports browning and softens texture. Use milk to recreate the following recipes!</p> 
+		<a onclick="addIngredient(this)">  <p class="label1 note"> bread </p></a> <p class="pinterlinea">//</p>
+		<a onclick="addIngredient(this)"> <p class="label1 note"> paint </p></a>
+		</div>
+
+		<!-- salt -->
+			
+  		<p class="note" onclick="toggleCollapse()">salt</p>
+		<div class="collapse-content">
+			<p class="pinterlinea"> The physical properties of milk include fluid flow, mixing and churning, emulsification and homogenization, as well as heat transfer processes such as pasteurization, sterilization, evaporation, dehydration, chilling, and freezing. Milk performs many functions in your baked goods. It serves as a source of liquid to hydrate the dry ingredients, adds flavor, supports browning and softens texture. Use milk to recreate the following recipes!</p> 
+		<a onclick="addIngredient(this)">  <p class="label1 note"> bread </p></a> <p class="pinterlinea">//</p>
+		<a onclick="addIngredient(this)"> <p class="label1 note"> toothpaste </p></a>
+		</div>
+
+		<!-- oil -->
 			
   		<p class="note" onclick="toggleCollapse()">olive oil</p>
 		<div class="collapse-content">
-			<p class="text2">you can use olive oil to create these products:</p> <br>
-		<a onclick="addIngredient(this)">  <p class="pinterlinea note"> bread </p></a> <br>
-		<p class="pinterlinea note"> soap </p>
+			<p class="pinterlinea">Extra virgin olive oil is loaded with heart-healthy fats and antioxidants, making it a great addition to a nutritious diet. It has also been linked to a long list of benefits and may protect against inflammation, heart disease, breast cancer, and type 2 diabetes. Use olive oil to recreate the following recipes!</p> 
+		<a onclick="addIngredient(this)">  <p class="label1 note"> bread </p></a> <p class="pinterlinea">//</p>
+		<a onclick="addIngredient(this)"> <p class="label1 note"> soap </p></a>
 		</div>
 
-			
-			<!-- water -->
-			
+
+		<!-- water -->
   		 		<p class="note" onclick="toggleCollapse()">water</p>
 		<div class="collapse-content">
-		<p>bread</p>
+			<p class="pinterlinea">
+Water is important for all life forms. It is an inorganic, colour-less and almost tasteless chemical substance with the molecular formula H2O.The four unique properties of water that make it unique are high specific heat, high polarity, adhesion cohesion, and a lower density as a solid. A number of functional properties of water are important in food processing such as the ability to dissolve and disperse other food components, the ability to be bound by other food components, the ability to transfer heat, the ability to sublimate, and its ability to transport materials. Use water to recreate the following recipes!</p> 
+		<a onclick="addIngredient(this)">  <p class="label1 note"> bread </p></a> <p class="pinterlinea">//</p>
+		<a onclick="addIngredient(this)"> <p class="label1 note"> soap </p></a> <p class="pinterlinea">//</p>
+		<a onclick="addIngredient(this)"> <p class="label1 note"> toothpaste </p></a>
 		</div>
 
-			
-			<!-- vinegar -->
-			
-  		<p class="note" onclick="toggleCollapse()">vinegar</p>
+		<!-- yeast -->
+  		 		<p class="note" onclick="toggleCollapse()">yeast</p>
 		<div class="collapse-content">
-		<p>bread</p>
-		</div>
-
-			
-			<!-- lye -->
-			
-  		<p class="note" onclick="toggleCollapse()">lye</p>
-		<div class="collapse-content">
-		<p>bread</p>
+			<p class="pinterlinea">
+Water is important for all life forms. It is an inorganic, colour-less and almost tasteless chemical substance with the molecular formula H2O.The four unique properties of water that make it unique are high specific heat, high polarity, adhesion cohesion, and a lower density as a solid. A number of functional properties of water are important in food processing such as the ability to dissolve and disperse other food components, the ability to be bound by other food components, the ability to transfer heat, the ability to sublimate, and its ability to transport materials. Use water to recreate the following recipes!</p> 
+		<a onclick="addIngredient(this)">  <p class="label1 note"> bread </p></a> <p class="pinterlinea">//</p>
+		<p class="label1 note"> ? </p>
 		</div>
 
 	
 		</div>
 
-	<!------------------>
-	<!--saved RECIPIES-->
-	<!------------------>
-	<p class="note" onclick="toggleCollapse()">saved recipes</p>
+	<!-------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------->
+	<!------------------------------SAVED RECIPES------------------------------------->
+	<!-------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------->
+	<p class="note" onclick="toggleCollapse()">collection</p>
 <div class="collapse-content">
+
+
   <div id="screenshot-gallery">  </div>
-  <button class="screen">print your recipe book</button>
+  
+<p class="pinterlinea">
+Choose the measurement system:</p> <br>
+
+	<div class="form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label pinterlinea" for="inlineRadio1">gr</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label pinterlinea" for="inlineRadio2">lb</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+  <label class="form-check-label pinterlinea" for="inlineRadio3">oz</label>
+</div>
+<br>
+<button class="screen2" onclick="printPage()">print your recipe book</button>
+
+
 </div>
 
 

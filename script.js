@@ -18,16 +18,37 @@ function addIngredient(myIngredient) {
 	let possibleIngredients = $('#allProducts').next().find('.collapse-content');
 
 	for (let i=0; i<possibleIngredients.length; i++) {
+		let targetIngredient = $(possibleIngredients[i]).prev()[0].innerText;
 		//console.log(possibleIngredients[i].innerText);
-		if (possibleIngredients[i].innerText == myIngredientName) {
+		/*if (possibleIngredients[i].innerText == myIngredientName) {
 			console.log($(possibleIngredients[i]).next().find('.collapse-content'));
 			//$(possibleIngredients[i]).next().find('.collapse-content').addClass('collapsed');
 			$(possibleIngredients[i]).next().find('.collapse-content').classList.toggle('collapsed');
+		}*/
+		if (targetIngredient == myIngredientName){
+			//console.log(targetIngredient);
+			//console.log($(possibleIngredients[i])[0]);
+			$($(possibleIngredients[i])[0]).addClass('collapsed');
+			$('.allProductsContent').addClass('collapsed');
 		}
 	}
 
-	//console.log(possibleIngredients);
 }
+
+
+/*function addIngredients(myIngredients) {
+	let myIngredientsName = myIngredients.innerText;
+	let possibleIngredient = $('#allIngredients').next().find('.collapse-content');
+
+	for (let i=0; i<possibleIngredient.length; i++) {
+		let targetIngredients = $(possibleIngredient[i]).prev()[0].innerText;
+		if (targetIngredients == myIngredientsName){
+			$($(possibleIngredient[i])[0]).addClass('collapsed');
+			$('.allIngredientsContent').addClass('collapsed');
+		}*/
+
+
+
 
 
 function takeScreenshot(event) {
@@ -40,3 +61,13 @@ function takeScreenshot(event) {
     screenshotGallery.appendChild(screenshotImage);
   });
 }
+
+
+function printPage() {
+	$( document ).ready(function() {
+		console.log(2);
+    window.print();
+	});
+}
+
+

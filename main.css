@@ -1,7 +1,24 @@
+.link{color: rgb(200,200,200);
+	line-height: 28px;  
+	text-decoration: none;
+}
+
+.link:link, .link:visited
+        {
+            color: rgb(200,200,200);
+            text-decoration: none;
+        }
+.link:hover, .link:visited:hover
+        {
+            color: rgb(0,256,0);
+            text-decoration: none;
+        }
+
+
+
 img {
 	filter: grayscale(100%) sepia(100%) hue-rotate(70deg) brightness(1) contrast(0.9);
-	max-height: 500px;
-	width: 500px;
+	max-height: 200px;
 	margin-top: 0px;
 	padding-right: 10px;
 	padding-bottom: 10px;
@@ -9,17 +26,62 @@ img {
 }
 
 
+/*-------------------*/
+/*-----collapse------*/
+/*-------------------*/
+
+.note {color: rgb(200,200,200);
+	   cursor:pointer;
+	   text-decoration:none;
+}
+.note:hover {color: rgb(0, 256, 0);
+			
+}
+
+form {
+	    width: max-content;
+}
+
 .boxselezione {
-	margin-bottom: 4.1px;
+	margin-bottom: -3.9px;
+	margin-top: 0px;
+	width: max-content;
 }
 
 .boxaggiungi {
-	max-height: 24.1px;
+	max-height: 24px;
 	color: black;
+	width: 311px;
 }
+
 p.boxaggiungi {
 	color: rgb(200,200,200);
 }
+
+    .collapse-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      padding: 0px;
+  	  margin-left: 3%;
+    }
+
+    .collapse-content.collapsed {
+      max-height: fit-content;
+      transition: max-height 0.2s ease-in;
+    }
+
+.collapse-content2 {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      padding: 0px;
+    }
+
+    .collapse-content2.collapsed {
+      max-height: fit-content;
+      transition: max-height 0.2s ease-in;
+    }
 
 /*-------------------*/
 /*-----colonnee------*/
@@ -41,27 +103,19 @@ p.boxaggiungi {
 .right {
   width: 90%;
 }
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/*-------------------*/
-/*-------body--------*/
-/*-------------------*/
+/*--------------------*/
+/*-------TESTI--------*/
+/*--------------------*/
 
 * {
 	font-family: Menlo;
-}
-
-.headleft {
-	line-height: 20px; 
-	color: rgb(20, 20, 20);
-	display: inline-block;
-	margin-top: 1px;
-	margin-bottom: 1px;
-
 }
 
 .head {
@@ -79,63 +133,107 @@ p, h6 {
 	display: inline-block;   
 }
 
-h1 {
-	color: rgb(0,256,20); 
-
-}
-
 .pnumeri{
 	color: rgb(100,100,100); 
 	line-height: 28px; 
 	font-size: 10px; 
 	display: inline-block; 
 }
-.text2 {
-	color: rgb(100,100,100);
-
-}
-
-.pinterlinea{
+.pabout{
 	color: rgb(200,200,200); 
 	line-height: 28px; 
 	display: inline-block; 
 	margin-bottom: 0px; 
 }
+.pgenerate{
+	color: rgb(200,200,200); 
+	line-height: 28px; 
+	display: inline-block; 
+	margin-bottom: 0px; 
+	margin-top: 0px;
+}
+.pinterlinea{
+	color: rgb(200,200,200); 
+	line-height: 27.25px; 
+	display: inline-block; 
+	margin-bottom: 0px; 
+}
+
+/*arancione*/
+.label1 {
+	color: rgb(180,180,256); 
+}
+/*violetto*/
+.label2 {
+	color: rgb(180,180,256); 
+}
+/*grigio*/
+.label3 {
+	color: rgb(200,200,200); 
+}
+
+
+/*-------------------------*/
+/*------screen button------*/
+/*-------------------------*/
 
 .screen {
 	color: black;
 	background-color: rgb(200,200,200); 
+	max-height: 24.4px;
+	width: 311px;
+	text-align: center;
+	text-justify: auto;
+	font-size: 80%;
 }
+
+.screen2 {
+	color: black;
+	background-color: rgb(200,200,200); 
+	max-height: 24.4px;
+	width: 311px;
+	text-align: center;
+	text-justify: auto;
+	font-size: 80%;
+	margin-top: 5px;
+}
+
+.generate {
+	color: black;
+	background-color: rgb(200,200,200); 
+	max-height: 24.4px;
+	width: 311px;
+	text-align: center;
+	text-justify: auto;
+	font-size: 80%;
+	margin-top: 3px;
+	margin-bottom: 2px;
+
+}
+
+.generate:hover {
+	color: rgb(0,256,20);
+	background-color: black; 
+}
+
 
 .screen:hover {
 	color: rgb(0,256,20);
 	background-color: black; 
 }
 
-
-/*-------------------*/
-/*-------note--------*/
-/*-------------------*/
-
-.note {color: rgb(200,200,200);
-	   cursor:pointer;
-	   text-decoration:none;
-}
-.note:hover {color: rgb(0, 256, 0);
-			
+.screen2:hover {
+	color: rgb(0,256,20);
+	background-color: black; 
 }
 
 
+/*.screenshot-section {
+	width: max-content;
 
-    .collapse-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      padding: 0px;
-  	  margin-left: 3%;
-    }
+}*/
+.screenshot-section {
+	width: fit-content;
 
-    .collapse-content.collapsed {
-      max-height: 1000px;
-      transition: max-height 0.2s ease-in;
-    }
+}
+
