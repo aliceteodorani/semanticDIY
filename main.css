@@ -58,6 +58,23 @@ p.boxaggiungi {
 	color: rgb(200,200,200);
 }
 
+.boxx{
+	max-height: 51.8px;
+	color: black;
+	width: 311px;
+	margin-bottom: -10px;
+
+}
+
+.boxx2{
+	max-height: 24px;
+	color: black;
+	width: 311px;
+	margin-bottom: 3.45px;
+
+}
+
+
     .collapse-content {
       max-height: 0;
       overflow: hidden;
@@ -159,13 +176,13 @@ p, h6 {
 	margin-bottom: 0px; 
 }
 
-/*arancione*/
+/*arancione rgb(255,0,220) */
 .label1 {
-	color: rgb(180,180,256); 
+	color: rgb(0,111,255); 
 }
 /*violetto*/
 .label2 {
-	color: rgb(180,180,256); 
+	color: rgb(0,111,255); 
 }
 /*grigio*/
 .label3 {
@@ -236,4 +253,5 @@ p, h6 {
 	width: fit-content;
 
 }
+
 
